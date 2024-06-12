@@ -2,7 +2,7 @@
 body {
     display: grid;
     height: auto;
-    grid-template: auto;
+    grid-template: auto 1fr auto;
     background-color: bisque;
 }
 
@@ -22,7 +22,6 @@ header {
 
 /*Left main side - span 4 parts*/
 main {
-    display: flex;
     grid-column: 1 / 4;
     background-color: rgb(110, 42, 173);
     padding: 2rem;
@@ -30,7 +29,6 @@ main {
 
 /*Right main side - span last block*/
 .aside-content {
-    display: flex;
     grid-column: 4 / 5;
     background-color: violet;
     padding: 2rem;
