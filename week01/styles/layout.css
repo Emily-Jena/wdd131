@@ -1,7 +1,7 @@
 /*The whole page*/
 body {
     display: grid;
-    height: 100vh;
+    height: auto;
     grid-template: auto 1fr auto;
     background-color: bisque;
 }
