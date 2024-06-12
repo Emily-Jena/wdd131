@@ -1,0 +1,41 @@
+/*The whole page*/
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto;
+    background-color: bisque;
+}
+
+/*Top - Span full*/
+header {
+    grid-column: 1 / 5;
+    background-color: aquamarine;
+}
+
+/*Split into 4 parts*/
+.tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: aqua;
+    text-align: center;
+    padding-right: auto auto auto auto;
+}
+
+/*Left main side - span 4 parts*/
+main {
+    grid-column: 1 / 4;
+    background-color: rgb(110, 42, 173);
+}
+
+/*Right main side - span last block*/
+.aside-content {
+    grid-column: 4 / 5;
+    background-color: violet;
+
+}
+
+/*Full span*/
+footer {
+    grid-column: 1 / 5;
+    background-color: aquamarine;
+}
