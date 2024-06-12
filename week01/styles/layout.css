@@ -18,24 +18,27 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: aqua;
     text-align: center;
-    padding-right: auto auto auto auto;
 }
 
 /*Left main side - span 4 parts*/
 main {
+    display: flex;
     grid-column: 1 / 4;
     background-color: rgb(110, 42, 173);
+    padding: 2rem;
 }
 
 /*Right main side - span last block*/
 .aside-content {
+    display: flex;
     grid-column: 4 / 5;
     background-color: violet;
-
+    padding: 2rem;
 }
 
 /*Full span*/
 footer {
+    display:  flex;
     grid-column: 1 / 5;
     background-color: aquamarine;
 }
