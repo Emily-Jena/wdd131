@@ -2,7 +2,7 @@
 body {
     display: grid;
     height: auto;
-    grid-template: auto 1fr auto;
+    grid-template: auto;
     background-color: bisque;
 }
 
