@@ -6,7 +6,7 @@ body {
 }
 
 header,
-footer {
+footer, h1 {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;
@@ -36,7 +36,6 @@ nav ul {
     justify-content: space-around;
 }
 
-h1,
 h2 {
     font-family: "Merriweather", serif;
     font-weight: 400;
