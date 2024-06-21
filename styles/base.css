@@ -6,11 +6,18 @@ body {
 }
 
 header,
-footer, h1, title {
+h1 {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;
     background-color: #568FA3;
+    text-align: center;
+}
+
+footer {
+    background-color: #568FA3;
+    margin: 0;
+    padding: 0.5px;
     text-align: center;
 }
 
@@ -42,13 +49,12 @@ h2 {
     font-style: italic;
 }
 
-
 main {
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-gap: 20px;
     margin: 0 auto;
-    max-width: 0 auto;
+    max-width: 100%;
 }
 
 .card {
