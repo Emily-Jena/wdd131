@@ -1,0 +1,22 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, main, footer {
+    max-width: 640px; /*Shrinks from large view to phone view*/
+    margin: 1rem auto; /*Centers details on page's center*/
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: aqua;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: aliceblue;
+}
