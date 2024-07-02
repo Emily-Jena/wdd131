@@ -28,28 +28,32 @@ main {
     align-items: center;
     margin: 2rem auto;
 }
-
 nav {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0 auto;
 }
+
+nav a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid black;
+    max-width: max-content;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+}
+
 
 .nav-links {
     margin: 0;
     padding: 0;
-}
-
-.nav-links a {
-    display: block;
-    text-decoration: none;
-}
-
-.nav-links a:hover {
-    border: 1px solid black;
-    max-width: max-content;
-    text-decoration: underline double;
 }
 
 .nav-links li {
