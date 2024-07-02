@@ -1,0 +1,61 @@
+body {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1em;
+}
+
+header,
+h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #568FA3;
+    text-align: center;
+}
+
+footer {
+    background-color: #568FA3;
+    margin: 0;
+    padding: 0.5px;
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+nav a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid black;
+    max-width: max-content;
+    text-decoration: underline double;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax);
+}
+
+main { 
+    width: min-content;
+    align-items: center;
+}
