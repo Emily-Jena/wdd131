@@ -1,17 +1,20 @@
 /* Styles For Mobile View*/
 @media screen and (min-width: 500px) {
-    header, h1 {
-    font-family: "Merriweather", serif;
-    font-weight: 700;
-    font-style: normal;
-    background-color: #568FA3;
-    text-align: center;
+
+    header,
+    h1 {
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-style: normal;
+        background-color: #568FA3;
+        text-align: center;
+    }
+
+    nav {
+        margin: 0 auto;
+    }
 }
 
-nav {
-    margin: 0 auto;
-}
-}
 body {
     font-family: "Merriweather", serif;
     font-weight: 400;
@@ -27,7 +30,7 @@ footer {
     text-align: center;
 }
 
-main { 
+main {
     width: min-content;
     align-items: center;
     margin: 2rem auto;
