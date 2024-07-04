@@ -24,10 +24,11 @@ header, footer {
     margin: 0;
 }
 
-main {
+body {
     margin: 2rem;
     padding: 1rem;
-    display: flex;    
+    
+       
 }
 
 h2 {
@@ -38,8 +39,8 @@ h2 {
     text-align: left;
     margin-left:0 ;
 }
-.sec-data{
-    
+
+.sec-data{  
     text-align: center;
     max-width: 30%;
 }
