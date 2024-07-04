@@ -1,0 +1,58 @@
+/* Styles For Mobile View*/
+
+/* Presets Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+:root {
+    --primary-color: #fd0000b5;
+    --secondary-color: rgba(4, 206, 58, 0.523);
+    --accent-color: white;
+    --font-family-heading: 'Merriweather', serif;
+    --font-family-body: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0;
+}
+
+main {
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;    
+}
+
+h2 {
+    background-color: var(--secondary-color);
+    max-width: 80%;
+    padding: 1rem;
+    word-wrap: normal;
+    text-align: left;
+    margin-left:0 ;
+}
+.sec-data{
+    
+    text-align: center;
+    max-width: 30%;
+}
+
+.sec-weather {
+    border-top: 0.5px solid rgb(147, 145, 145);
+    text-align: center;
+    max-width: 30%;
+}
+
+.hero-img {
+    border-top: 1rem solid var(--secondary-color);
+    border-bottom: 5px solid var(--primary-color);
+    max-height: auto;
+
+}
