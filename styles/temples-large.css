@@ -19,6 +19,7 @@
         padding: 3rem 0;
     }
 
+    /* Links & Navigation Styles*/
     .nav-links li {
         margin: 0 1rem;
     }
@@ -28,6 +29,11 @@
         padding: 0.75rem 1.5rem;
     }
 
+    nav a:hover {
+        background-color: var(--primary-color);
+    }
+
+    /* Figure Styles*/
     .figure-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -38,5 +44,11 @@
 
     .figure-grid figcaption {
         font-size: 1.1rem;
+    }
+
+    /* Hamburger Button Styles*/
+
+    .hamburger-button {
+        display: none;
     }
 }

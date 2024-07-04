@@ -1,6 +1,7 @@
 /* Styles For Mobile View*/
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
+/* Presets Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 :root {
     --primary-color: #568FA3;
     --secondary-color: antiquewhite;
@@ -8,7 +9,7 @@
     --font-family-heading: 'Merriweather', serif;
     --font-family-body: 'Montserrat', sans-serif;
 }
-
+/* Header, Main, Footer Contents Styles*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -49,6 +50,7 @@ main {
     margin: 0 auto;
 }
 
+/* Links & Navigation Styles*/
 a {
     text-decoration: none;
     color: var(--secondary-color);
@@ -75,6 +77,7 @@ nav ul {
     margin: 1rem;
 }
 
+/* Figure Styles*/
 .figure-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -94,4 +97,37 @@ nav ul {
     width: 90%;
     max-height: 300px;
     border-radius: 0.5rem;
+}
+
+/* Hamburger Button Styles*/
+.hamburger-button {
+    font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+.hamburger-button::before {
+    content: "☰";
+}
+
+.hamburger-button.open::before {
+    content: "X";
+}
+
+.nav-links {
+    max-width: 700px;
+	margin: 1rem auto;
+}
+
+.open a {
+	display: block;
+}
+
+.nav-links.show-nav {
+    max-height: 500px; /* Adjust this value as needed */
+    transition: max-height 0.3s ease-in;
 }
