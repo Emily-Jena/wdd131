@@ -29,17 +29,27 @@ body {
     padding: 1rem;     
 }
 
+label {
+    padding: 5px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.value {
+    text-decoration: none;
+    font-weight: 100;
+    text-align: center;
+    column-gap: 5px;
+}
+
 h2 {
-    /*background-color: var(--secondary-color);*/
-    max-width: 80%;
     padding: 1rem;
-    word-wrap: normal;
     text-align: center;
     margin-left:0 ;
 }
 
 .sec-data, .sec-weather {
-    border-top: 0.5px solid rgb(147, 145, 145);
+    border-bottom: 0.5px solid rgb(147, 145, 145);
     text-align: center;
     padding-bottom: 1rem;
 }
@@ -47,6 +57,5 @@ h2 {
 .hero-img {
     border-top: 1rem solid var(--secondary-color);
     border-bottom: 5px solid var(--primary-color);
-    max-width: auto;
-
+    max-width: 100%;
 }

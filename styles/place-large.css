@@ -1,6 +1,8 @@
-/*For larger view screen*/
+/*For larger view screen
 
 @media screen and (min-width: 500px) {
 
-    
+    h2 {
+        background-color: var(--secondary-color);
+        max-width: 80%;
 }
