@@ -25,8 +25,14 @@
     </header>
 
     <main>
-        <img class="hero-img" src="images/hero.jpg" alt="Hero (background) image of "> <!--input Hero image-->
+        <div class="hero">
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/hero-place-large.webp">
+            <img class="hero-img" src="images/hero-place-small.jpg" alt="Hero (background) image of "> <!--input Hero image-->
 
+        </picture>
+    </div>
+        
         <div class="sec-data">
             <h2>Data</h2>
 
@@ -72,8 +78,13 @@
         </div>
 
         <div class="sec-weather">
-            <h2>Weather <img src="images/sun.jpg" alt="Picture of the sun for the title 'weather'"></h2>
-            <!--Download & input the sun image-->
+            <h2>Weather
+                <picture>
+                    <source media="(min-width: 1500px)" srcset="images/sun.svg" width="250" height="100">
+                    <img src="images/sun.svg" alt="Picture of the sun for the title 'weather'" width="50" height="35">
+                </picture>
+            
+            </h2> 
             <p>
                 <label>Temperature:</label>
                 <label class="value">22 &deg;C</label>
@@ -109,5 +120,4 @@
     </footer>
 
 </body>
-
 </html>
