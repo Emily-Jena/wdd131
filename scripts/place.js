@@ -12,7 +12,7 @@ lastModified.textContent = document.lastModified;
 //-----------------------------------------------------------
 // The temperature and wind speed values (Degree Celsius & km/h)
 const temp = 22;
-const windSpeed = 11; 
+const windSpeed = 11;
 
 // Calculate the wind chill factor & Verify if conditions are true
 function calculateWindChill(temp, windSpeed) {
