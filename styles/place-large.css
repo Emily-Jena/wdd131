@@ -41,13 +41,12 @@
         position: absolute;
         object-fit: cover;
         width: 100%;
-        height: auto;
+        height: 45%;
         border: none;
     }
 
     footer {
         display: block;
-        margin-top: 1rem;
-        
+        margin-top: 1rem;       
     }
 }
