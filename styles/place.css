@@ -1,6 +1,6 @@
 /* Styles For Mobile View*/
 
-/* Presets Styles*/
+/* Global variable Styles*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 :root {
     --primary-color: #fd0000b5;
@@ -25,14 +25,15 @@ header, footer {
 }
 
 body {
-    margin: 2rem;
-    padding: 1rem;     
+    margin: 0;
+    padding: 0;     
 }
 
 label {
-    padding: 5px;
+    padding-bottom: 15px;
     font-weight: bold;
-    align-items: center;
+    align-items: right;
+    justify-content: center;
 }
 
 .value {
@@ -51,6 +52,7 @@ h2 {
 .sec-data, .sec-weather {
     border-bottom: 0.5px solid rgb(147, 145, 145);
     text-align: center;
+    align-items: center;
     padding-bottom: 1rem;
 }
 
