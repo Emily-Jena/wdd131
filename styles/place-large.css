@@ -42,7 +42,7 @@
         position: absolute;
         object-fit: cover;
         width: 100%;
-        height: auto;
+        height: 480px;
         border: none;
     }
 
