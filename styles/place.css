@@ -21,7 +21,7 @@ header, footer {
     color: var(--accent-color);
     text-align: center;
     padding: 20px;
-    margin: auto;
+    margin: 0;
 }
 
 body {
