@@ -4,33 +4,28 @@
 
     h2 {
         background-color: var(--secondary-color);
-        max-width: 85%;
+        max-width: 90%;
     }
 
     .sun-icon {
         display: none;
     }
 
-    .sec-data {
+    .sec-data, .sec-weather {
         box-sizing: border-box;
         border: 1px solid #9d9d9d;
-        margin: 1rem;
         max-width: 30%;
         background-color: #d6d6d6;
-        order: 1;
         position: relative;
     }
 
+    .sec-data {
+        margin: 1rem;
+    }
+
     .sec-weather {
-        box-sizing: border-box;
-        border: 1px solid #9d9d9d;
-        max-width: 20%;
         max-height: 50%;
-        background-color: #d6d6d6;
         margin-right: 1rem;
-
-        position: relative;
-
     }
 
     .sec-weather h2::after {
@@ -47,7 +42,6 @@
     }
 
     header, footer {
-        display: block;
         position: relative;
         background-color: rgb(22, 22, 100);
     }
