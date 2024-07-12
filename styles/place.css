@@ -12,7 +12,7 @@
 
 * {
     box-sizing: border-box;
-    margin: auto;
+    margin: auto ;
     padding: 0;
 }
 
@@ -21,6 +21,7 @@ header, footer {
     color: var(--accent-color);
     text-align: center;
     padding: 20px;
+    margin: auto;
 }
 
 body {
@@ -28,20 +29,24 @@ body {
     padding: 0;     
 }
 
-main
+main {
+    margin: 0;
+    padding: auto;
+     background-color: aliceblue;
+}
 
 label {
     padding-bottom: 15px;
     font-weight: bold;
-    align-items: right;
-    justify-content: center;
+    text-align: left;
 }
 
 .value {
     text-decoration: none;
     font-weight: 100;
     text-align: center;
-    column-gap: 5px;
+    column-gap: 2px;
+    text-wrap: wrap;
 }
 
 h2 {
@@ -52,13 +57,12 @@ h2 {
 
 .sec-data, .sec-weather {
     border-bottom: 0.5px solid rgb(147, 145, 145);
-    text-align: center;
-    align-items: center;
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 .hero-img {
+    display: flex;
     border-top: 1rem solid var(--secondary-color);
     border-bottom: 5px solid var(--primary-color);
-    max-width: 100%;
 }
