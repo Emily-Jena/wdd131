@@ -1,6 +1,6 @@
 /*For larger view screen*/
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
 
     h2 {
         background-color: var(--secondary-color);
