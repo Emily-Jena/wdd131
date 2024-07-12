@@ -29,6 +29,6 @@ function calculateWindChill(temp, windSpeed) {
 
 // Calculate and display the wind chill factor
 const windChill = calculateWindChill(temp, windSpeed);
-document.getElementById('wind-chill').textContent = windChill;
+document.querySelector('.wind-chill').textContent = windChill !== 'N/A' ? `${windChill} °C` : windChill;
 
 // ----------------------------------------------------------

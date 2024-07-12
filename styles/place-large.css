@@ -1,9 +1,54 @@
-/*For larger view screen
+/*For larger view screen*/
 
 @media screen and (min-width: 500px) {
 
     h2 {
         background-color: var(--secondary-color);
-        max-width: 80%;
+        max-width: 85%;
+    }
+
+    .sun-icon {
+        display: none;
+    }
+
+    /*Content should only display next to the weather title*/
+    h2.sec-weather ::after {
+        content: " 🌤";
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .sec-data {
+        box-sizing: border-box;
+        border: 1px solid #9d9d9d;
+        margin: 1rem;
+        max-width: 30%;
+        background-color: #d6d6d6;
+        order: 1;
+    }
+
+    .sec-weather {
+        box-sizing: border-box;
+        border: 1px solid #9d9d9d;
+        max-width: 20%;
+        align-self: right;
+        background-color: #d6d6d6;
+        margin-right: 1rem;
+        order: 2;
+    }
+
+    .img-hero{
+        display: block;
+        max-width: 100%;
+        position: absolute;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
 }
-        
