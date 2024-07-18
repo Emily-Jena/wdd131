@@ -1,0 +1,136 @@
+/* Styles For Mobile View*/
+
+/* Presets Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+:root {
+    --primary-color: #568FA3;
+    --secondary-color: antiquewhite;
+    --accent-color: #284b63;
+    --font-family-heading: 'Merriweather', serif;
+    --font-family-body: 'Montserrat', sans-serif;
+}
+/* Header, Main, Footer Contents Styles*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    font-style: normal;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+body {
+    font-family: var(--font-family-body);
+    font-weight: 400;
+}
+
+h1, h2 {
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    max-width: 90%;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+/* Links & Navigation Styles*/
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    margin: 1rem;
+}
+
+/* Figure Styles*/
+.figure-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+.figure-grid figcaption {
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.figure-grid figure {
+    text-align: center;
+}
+
+.figure-grid img {
+    width: 90%;
+    max-height: 300px;
+    border-radius: 0.5rem;
+}
+
+/* Hamburger Button Styles*/
+.hamburger-button {
+    display: block; 
+  }
+
+.nav {
+    display: none; 
+    flex-direction: column;
+}
+
+.nav-links.show-nav {
+    display: flex; 
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+.hamburger-button::before {
+    content: "☰";
+}
+
+.hamburger-button.open::before {
+    content: "X";
+}
