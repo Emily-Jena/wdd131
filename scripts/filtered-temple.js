@@ -104,32 +104,6 @@ const temples = [
     },
 ];
 
-createTempleCard(temples);
-
-const oldtempleLink = document.querySelector("#oldtemple");
-const newtempleLink = document.querySelector("#newtemple");
-const largetempleLink = document.querySelector("#largetemple");
-const smalltempleLink = document.querySelector("#smalltemple");
-
-// Response menu -old
-oldtempleLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => new Date(temple.dedicated) < new Date("1900-01-01")));
-});
-// Response menu - new
-newtempleLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => new Date(temple.dedicated) > new Date("2000-01-01")));
-});
-
-// Response menu - large
-largetempleLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.area > 90000));
-});
-
-// Response menu - small
-smalltempleLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.area < 10000));
-});
-
 function createTempleCard(filteredTemples) {
     document.querySelector(".figure-grid").innerHTML = "";
     filteredTemples.forEach(temple => {
@@ -157,4 +131,31 @@ function createTempleCard(filteredTemples) {
         document.querySelector(".figure-grid").appendChild(card);
     });
 }
+
+
+createTempleCard(temples);
+
+const oldtempleLink = document.querySelector("#oldtemple");
+const newtempleLink = document.querySelector("#newtemple");
+const largetempleLink = document.querySelector("#largetemple");
+const smalltempleLink = document.querySelector("#smalltemple");
+
+// Response menu -old
+oldtempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => new Date(temple.dedicated) < new Date("1900-01-01")));
+});
+// Response menu - new
+newtempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => new Date(temple.dedicated) > new Date("2000-01-01")));
+});
+
+// Response menu - large
+largetempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+// Response menu - small
+smalltempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
 
