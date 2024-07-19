@@ -132,7 +132,6 @@ function createTempleCard(filteredTemples) {
     });
 }
 
-
 createTempleCard(temples);
 
 const oldtempleLink = document.querySelector("#oldtemple");
