@@ -13,10 +13,8 @@
         background-color: var(--accent-color);
     }
 
-    
-
     main {
-        max-width: relative;
+        max-width: 100%;
         padding: 3rem 0;
     }
 
