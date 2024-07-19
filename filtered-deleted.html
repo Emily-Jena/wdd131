@@ -1,89 +1,114 @@
-<section>
-    <h3>Aba Nigeria</h3>
-    <p>Location: </p>
-    <p>Dedicated: </p>
-    <p>Size: </p>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg" " alt="
-        Aba, Nigeria Temple" loading="lazy" width="400" height="250">
-</section>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temple Directory</title>
+  <style>
+    .temple-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .temple-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Temple Directory</h1>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="filterTemples('old')">Old</a></li>
+      <li><a href="#" onclick="filterTemples('new')">New</a></li>
+      <li><a href="#" onclick="filterTemples('large')">Large</a></li>
+      <li><a href="#" onclick="filterTemples('small')">Small</a></li>
+      <li><a href="#" onclick="filterTemples('home')">Home</a></li>
+    </ul>
+  </nav>
 
-<section>
-    <h3>Manti Utah</h3>
-    <p>Location: </p>
-    <p>Dedicated: </p>
-    <p>Size: </p>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
-        alt="Manti, Utah Temple" loading="lazy" width="400" height="250">
-</section>
+  <div id="temple-container"></div>
 
-<section>
-    <h3>Payson Utah</h3>
-    <p>Location: </p>
-    <p>Dedicated: </p>
-    <p>Size: </p>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
-        alt="Payson, Utah Temple" loading="lazy" width="400" height="250">
-</section>
+  <script>
+    const temples = [
+      {
+        name: "Salt Lake Temple",
+        location: "Salt Lake City, Utah",
+        dedication: "1893-04-06",
+        area: 253,000
+      },
+      {
+        name: "Nuku'alofa Tonga Temple",
+        location: "Nuku'alofa, Tonga",
+        dedication: "1983-08-09",
+        area: 13,000
+      },
+      {
+        name: "San Diego California Temple",
+        location: "San Diego, California",
+        dedication: "2015-11-14",
+        area: 57,000
+      },
+      {
+        name: "Tokyo Japan Temple",
+        location: "Tokyo, Japan",
+        dedication: "1980-10-27",
+        area: 28,000
+      }
+    ];
 
-<section>
-    <h3>Yigo Guam</h3>
-    <p>Location: </p>
-    <p>Dedicated: </p>
-    <p>Size: </p>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
-        alt="Yigo, Guam Temple" loading="lazy" width="400" height="250">
-</section>
+    function createTempleCard(temple) {
+      const card = document.createElement("div");
+      card.classList.add("temple-card");
 
-<section>
-    <h3>Washington D.C</h3>
-    <p>Location: </p>
-    <p>Dedicated: </p>
-    <p>Size: </p>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
-        alt="Washington, D.C Temple" loading="lazy" width="400" height="250">
-</section>
+      const img = document.createElement("img");
+      img.src = `https://example.com/temple-images/${encodeURIComponent(temple.name)}.jpg`;
+      img.alt = temple.name;
+      img.loading = "lazy";
+      card.appendChild(img);
 
-<section>
-    <h3>Lima Perú</h3>
-    <p>Location: </p>
-    <p>Dedicated: </p>
-    <p>Size: </p>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
-        alt="lima, Perú Temple" loading="lazy" width="400" height="250">
-</section>
+      const name = document.createElement("h3");
+      name.textContent = temple.name;
+      card.appendChild(name);
 
-<section>
-    <h3>Mexico City Mexico</h3>
-    <p>Location: </p>
-    <p>Dedicated: </p>
-    <p>Size: </p>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-        alt="Mexico City, Mexico Temple" loading="lazy" width="400" height="250">
-</section>
+      const location = document.createElement("p");
+      location.textContent = `Location: ${temple.location}`;
+      card.appendChild(location);
 
-<section>
-    <h3>Ghana Accra</h3>
-    <p>Location: </p>
-    <p>Dedicated: </p>
-    <p>Size: </p>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x225/accra-ghana-temple-detail-249022-2400x1200.jpg"
-        alt="Accra, Ghana Temple" loading="lazy" width="400" height="250">
-</section>
+      const dedication = document.createElement("p");
+      dedication.textContent = `Dedicated: ${temple.dedication}`;
+      card.appendChild(dedication);
 
-<section>
-    <h3>Johannesburg South Africa</h3>
-    <p>Location: </p>
-    <p>Dedicated: </p>
-    <p>Size: </p>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
-        alt="Johannesburg, South Africa Temple" loading="lazy" width="400" height="250">
-</section>
+      const area = document.createElement("p");
+      area.textContent = `Area: ${temple.area} square feet`;
+      card.appendChild(area);
 
-<section>
-    <h3>Salt Lake City Utah</h3>
-    <p>Location: </p>
-    <p>Dedicated: </p>
-    <p>Size: </p>
-    <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/slctemple5.jpg"
-        alt="Salt Lake City Temple" loading="lazy" width="400" height="250">
-</section>
+      return card;
+    }
+
+    function filterTemples(filter) {
+      const templesContainer = document.getElementById("temple-container");
+      templesContainer.innerHTML = "";
+
+      let filteredTemples = temples;
+
+      if (filter === "old") {
+        filteredTemples = temples.filter(temple => new Date(temple.dedication) < new Date("1900-01-01"));
+      } else if (filter === "new") {
+        filteredTemples = temples.filter(temple => new Date(temple.dedication) > new Date("2000-01-01"));
+      } else if (filter === "large") {
+        filteredTemples = temples.filter(temple => temple.area > 90000);
+      } else if (filter === "small") {
+        filteredTemples = temples.filter(temple => temple.area < 10000);
+      }
+
+      filteredTemples.forEach(temple => {
+        const card = createTempleCard(temple);
+        templesContainer.appendChild(card);
+      });
+    }
+
+    filterTemples("home");
+  </script>
+</body>
+</html>

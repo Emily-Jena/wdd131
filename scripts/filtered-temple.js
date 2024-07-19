@@ -111,8 +111,23 @@ const newtempleLink = document.querySelector("#newtemple");
 const largetempleLink = document.querySelector("#largetemple");
 const smalltempleLink = document.querySelector("#smalltemple");
 
+// Response menu -old
 oldtempleLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.dedicated.includes("")));
+    createTempleCard(temples.filter(temple => new Date(temple.dedication) < new Date("1900, January, 1 ")));
+});
+// Response menu - new
+newtempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => new Date(temple.dedication) > new Date("2000, January, 1")));
+});
+
+// Response menu - large
+newtempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+// Response menu - small
+newtempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
 });
 
 function createTempleCard(filteredTemples) {
