@@ -134,10 +134,10 @@ function createTempleCard(filteredTemples) {
 
 createTempleCard(temples);
 
-const oldtempleLink = document.querySelector("#oldtemple");
-const newtempleLink = document.querySelector("#newtemple");
-const largetempleLink = document.querySelector("#largetemple");
-const smalltempleLink = document.querySelector("#smalltemple");
+const oldtempleLink = document.querySelector("#old");
+const newtempleLink = document.querySelector("#new");
+const largetempleLink = document.querySelector("#large");
+const smalltempleLink = document.querySelector("#small");
 
 // Response menu -old
 oldtempleLink.addEventListener("click", () => {
