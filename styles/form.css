@@ -63,12 +63,12 @@ legend {
 }
 
 label {
-    
-    padding: 2rem 0;
+    display: inline-block;
+    padding: .5rem;
 }
 
 input[id="user-name"], 
-input[id="installation-date"], 
+input[id="  installation-date"], 
 select[id="product-name"],
 input[type="submit"] {
     background-color: var(--accent-color);
