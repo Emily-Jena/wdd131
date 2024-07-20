@@ -1,21 +1,26 @@
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
 
-#page-container {
-    max-width: 70%;
-}
+    #page-container {
+        max-width: 70%;
+    }
 
-input[id="user-name"], 
-input[id="installation-date"], 
-select[id="product-name"],
-input[type="submit"] {
-    max-width: 70%;
-}
+    input[id="user-name"],
+    input[id="installation-date"],
+    select[id="product-name"],
+    input[type="submit"] {
+        max-width: 70%;
+    }
 
-textarea[id="review"] {
-    max-width: 70%;
-}
+    textarea[id="review"] {
+        max-width: 70%;
+    }
 
-footer {
-    font-size: larger;
-}
+    footer {
+        font-size: larger;
+    }
+
+    .radio-option {
+        justify-content: space-evenly;
+        max-width: 70%;
+    }
 }
