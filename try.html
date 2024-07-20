@@ -1,0 +1,94 @@
+<body>
+    <div id="page-container">
+      <div id="content-wrap">
+        <header>
+          <h1>Product Review</h1>
+        </header>
+  
+        <main>
+          <form method="get" action="review.html">
+            <fieldset>
+              <!--Product Name-->
+              <label for="product-name">Product Name </label>
+  
+              <select id="product-name" name="product-name" required>
+                <option disabled selected>Choose a Product ...</option>
+              </select>
+  
+            </fieldset>
+            <fieldset>
+              <!--Overall Rating-->
+              <label>Overall Rating </label>
+              <section class="radio-option">
+                <label for="rating-1">☆
+                  <input type="radio" id="rating-1" name="overall-rating" value="1" required>
+                </label>
+  
+                <label for="rating-2">☆☆
+                  <input type="radio" id="rating-2" name="overall-rating" value="2" required>
+                </label>
+  
+                <label for="rating-3">☆☆☆
+                  <input type="radio" id="rating-3" name="overall-rating" value="3" required>
+                </label>
+  
+                <label for="rating-4">☆☆☆☆
+                  <input type="radio" id="rating-4" name="overall-rating" value="4" required>
+                </label>
+  
+                <label for="rating-5">☆☆☆☆☆
+                  <input type="radio" id="rating-5" name="overall-rating" value="5" required>
+                </label>
+              </section>
+            </fieldset>
+  
+            <!-- Rest of the form fields -->
+  
+            <input type="submit" value="Post Review">
+          </form>
+        </main>
+      </div>
+    </div>
+  
+    <script>
+      // Product Array
+      const products = [
+        {
+          id: "fc-1888",
+          name: "flux capacitor",
+          "averagerating": 4.5
+        },
+        {
+          id: "fc-2050",
+          name: "power laces",
+          "averagerating": 4.7
+        },
+        {
+          id: "fs-1987",
+          name: "time circuits",
+          "averagerating": 3.5
+        },
+        {
+          id: "ac-2000",
+          name: "low voltage reactor",
+          "averagerating": 3.9
+        },
+        {
+          id: "jj-1969",
+          name: "warp equalizer",
+          "averagerating": 5.0
+        }
+      ];
+  
+      // Get the product select element
+      const productSelect = document.getElementById('product-name');
+  
+      // Populate the product options
+      products.forEach(product => {
+        const option = document.createElement('option');
+        option.value = product.id;
+        option.text = product.name;
+        productSelect.add(option);
+      });
+    </script>
+  </body>
