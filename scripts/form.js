@@ -57,8 +57,8 @@ const reviewDisplay = document.querySelector("review-count");
 let reviewCount = Number(window.localStorage.getItem('reviewCount')) || 0;
 
 if (reviewCount !== 0) {
-  reviewDisplay.textContent = reviewCount; 
-} 
+  reviewDisplay.textContent = reviewCount;
+}
 
 reviewCount++;
 localStorage.setItem('reviewCount', reviewCount);
