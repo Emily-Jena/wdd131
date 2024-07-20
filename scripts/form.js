@@ -51,8 +51,15 @@ products.forEach(product => {
 });
 
 //-----------------------------------------------------
+const reviewDisplay = document.querySelector("review-count");
+
 // Review count from localStorage & Increment
-let reviewCount = localStorage.getItem('reviewCount') || 0;
+let reviewCount = Number(window.localStorage.getItem('reviewCount')) || 0;
+
+if (reviewCount !== 0) {
+  reviewDisplay.textContent = reviewCount; 
+} 
+
 reviewCount++;
 localStorage.setItem('reviewCount', reviewCount);
 
