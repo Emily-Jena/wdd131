@@ -1,13 +1,13 @@
 @media screen and (min-width: 500px){
-    
+
 input[id="user-name"], 
 input[id="installation-date"], 
 select[id="product-name"],
 input[type="submit"] {
-    max-width: 400px;
+    max-width: 70%;
 }
 
 textarea[id="review"] {
-    max-width: 400px;
+    max-width: 70%;
 }
 }

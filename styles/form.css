@@ -16,14 +16,15 @@
 #page-container {
     position: relative;
     min-height: 100vh;
-    max-width: max-content;
+    max-width: 80%;
 }
 
 #content-wrap {
     padding-bottom: 1rem;
 }
 
-header, footer{
+header,
+footer {
     text-align: center;
     margin: 1rem;
     padding: 1rem;
@@ -54,40 +55,46 @@ main {
 
 /*Product Review Contents*/
 fieldset {
-    margin: 2rem 0;
+    margin: .75rem 0;
     border: none;
 }
 
-legend {
-    padding: .5rem;
-}
-
 label {
-    display: inline-block;
+    display: block;
     padding: .5rem;
+    font-size: larger;
+    font-weight: bold;
 }
 
-input[id="user-name"], 
-input[id="  installation-date"], 
+input[id="user-name"],
+input[id="installation-date"],
 select[id="product-name"],
-input[type="submit"] {
+input[type="submit"],
+textarea[id="review"] {
     background-color: var(--accent-color);
-    display: block;
-    padding: .75rem;
+    padding: .85rem;
     border: 1px solid #333;
     border-radius: 6px;
     width: 100%;
+    font-size: larger;
+    display: block;
+}
+
+input[type="submit"] {
+    font-weight: bolder;
+    box-shadow: 2px 2px grey;
 }
 
 textarea[id="review"] {
-    background-color: var(--accent-color);
-    display: block;
-    width: 100%;
     min-height: 100px;
 }
-/*
-input[type="radio"],
-input[type="checkbox"] {
-    display: inline;
-    margin-right: 6px;
+
+.radio-option {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input[type="radio"] {
+    display: flex;
+    align-items: center;
 }
