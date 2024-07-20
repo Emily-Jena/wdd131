@@ -41,7 +41,8 @@
                     <fieldset>
                         <!--Overall Rating-->
                         <label>Overall Rating </label>
-                        <section class="radio-option">
+                        <div class="radio-option">
+                            
                         <label for="rating-1">☆
                         <input type="radio" id="rating-1" name="overall-rating" value="1" required></label>
 
@@ -56,18 +57,18 @@
 
                         <label for="rating-5">☆☆☆☆☆
                         <input type="radio" id="rating-5" name="overall-rating" value="5" required></label>
-                        </section>
+                        </div>
                         </fieldset>
 
                         <fieldset>
                             <!--Date of installation-->
-                            <label for="installation-date">Date of installation </label>
-                            <input type="date" id="installation-date" name="installation-date" required>
+                            <label for="installation-date">Date of installation 
+                            <input type="date" id="installation-date" name="installation-date" required></label>
                         </fieldset>
 
                         <fieldset>
                             <!--Useful Features-->
-                            <label>Which feature did you find useful in the product? <br /> (Check all that apply) </label>
+                            <label>Which feature did you find useful in the product? <br> (Check all that apply) </label>
 
                             <label for="feature-1"><input type="checkbox" id="feature-1" name="useful-features" value="feature-1">
                                 Durability</label>
@@ -84,7 +85,7 @@
 
                         <fieldset>
                             <!--Written Review-->
-                            <label for="review">Written Review (Optional) </label>
+                            <label for="review">Written Review (Optional)</label>
                             <textarea id="review" name="review"></textarea>
                         </fieldset>
 
@@ -93,7 +94,8 @@
                             <label for="user-name">Your Name (Optional)</label>
                             <input type="text" id="user-name" name="user-name">
                         </fieldset>
-                        <input type="submit" value="Post Review"></input>
+
+                        <input type="submit" value="Post Review">
             </form>
         </main>
     </div>
