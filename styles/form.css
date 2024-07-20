@@ -76,7 +76,7 @@ textarea[id="review"] {
     border: 1px solid #333;
     border-radius: 6px;
     width: 100%;
-    font-size: larger;
+    font-size: large;
     display: block;
 }
 
@@ -91,7 +91,7 @@ textarea[id="review"] {
 
 .radio-option {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 input[type="radio"] {
