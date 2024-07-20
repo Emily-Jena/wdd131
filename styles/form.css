@@ -16,7 +16,7 @@
 #page-container {
     position: relative;
     min-height: 100vh;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 #content-wrap {

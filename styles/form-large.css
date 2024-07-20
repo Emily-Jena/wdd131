@@ -1,5 +1,9 @@
 @media screen and (min-width: 500px){
 
+#page-container {
+    max-width: 70%;
+}
+
 input[id="user-name"], 
 input[id="installation-date"], 
 select[id="product-name"],
