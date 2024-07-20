@@ -112,3 +112,13 @@
   </script>
 </body>
 </html>
+
+const productNameSelect = document.createElement('select');
+
+products.forEach(item => {
+  let product = new products(item.id, item.name, averagerating);
+  productNameSelect.appendChild(products);
+});
+
+document.body.appendChild(productNameSelect);
+//
