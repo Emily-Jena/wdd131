@@ -14,4 +14,8 @@ input[type="submit"] {
 textarea[id="review"] {
     max-width: 70%;
 }
+
+footer {
+    font-size: larger;
+}
 }

@@ -37,6 +37,7 @@ footer {
 footer {
     position: relative;
     bottom: 0;
+    font-size: small;
 }
 
 body {
@@ -97,4 +98,5 @@ textarea[id="review"] {
 input[type="radio"] {
     display: flex;
     align-items: center;
+    margin: 0;
 }
