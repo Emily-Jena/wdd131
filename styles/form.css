@@ -1,0 +1,93 @@
+/*Header, Body, footer, Page*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+:root {
+    --primary-color: #333;
+    --secondary-color: white;
+    --accent-color: #dce3e3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    max-width: max-content;
+}
+
+#content-wrap {
+    padding-bottom: 1rem;
+}
+
+header, footer{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+body {
+    font-weight: 400;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 95%;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+    border: 1px solid var(--primary-color);
+    background-color: rgba(233, 216, 234);
+}
+
+/*Product Review Contents*/
+fieldset {
+    margin: 2rem 0;
+    border: none;
+}
+
+legend {
+    padding: .5rem;
+}
+
+label {
+    
+    padding: 2rem 0;
+}
+
+input[id="user-name"], 
+input[id="installation-date"], 
+select[id="product-name"],
+input[type="submit"] {
+    background-color: var(--accent-color);
+    display: block;
+    padding: .75rem;
+    border: 1px solid #333;
+    border-radius: 6px;
+    width: 100%;
+}
+
+textarea[id="review"] {
+    background-color: var(--accent-color);
+    display: block;
+    width: 100%;
+    min-height: 100px;
+}
+/*
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline;
+    margin-right: 6px;
+}
