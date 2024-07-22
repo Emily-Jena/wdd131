@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #f5dbf0;
+    /*background*/
+    --secondary-color: #ffffff;
+    /*header text*/
+    --accent-color: #210481;
+    /*header*/
+    --font-family-heading: Georgia, 'Times New Roman', Times, serif;
+    --font-family-body: Arial, Helvetica, sans-serif;
+}
+
+header {
+    font-family: var(--font-family-heading);
+}
+
+body {
+    font-family: var(--font-family-body);
+}
