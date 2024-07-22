@@ -122,3 +122,41 @@ products.forEach(item => {
 
 document.body.appendChild(productNameSelect);
 //
+
+let filteredTemples = temples;
+
+if (filter === 'old') {
+    filteredTemples = temples.filter(temple => temple.year < 1900);
+} else if (filter === 'new') {
+    filteredTemples = temples.filter(temple => temple.year > 2000);
+} else if (filter === 'large') {
+    filteredTemples = temples.filter(temple => temple.size > 90000);
+} else if (filter === 'small') {
+    filteredTemples = temples.filter(temple => temple.size < 10000);
+}
+
+// -------------------------------------------------
+
+const oldtempleLink = document.querySelector("#old");
+const newtempleLink = document.querySelector("#new");
+const largetempleLink = document.querySelector("#large");
+const smalltempleLink = document.querySelector("#small");
+
+// Response menu -old
+oldtempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => new Date(temple.dedicated) < new Date("1900-01-01")));
+});
+// Response menu - new
+newtempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => new Date(temple.dedicated) > new Date("2000-01-01")));
+});
+
+// Response menu - large
+largetempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+// Response menu - small
+smalltempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
