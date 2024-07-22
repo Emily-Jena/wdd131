@@ -1,0 +1,13 @@
+@media  screen (min-width: 500px) {
+    
+    
+    header {
+        padding: 2rem;
+       
+    }
+
+    main {
+        max-width: 100%;
+        padding: 3rem 0;
+    }
+}
