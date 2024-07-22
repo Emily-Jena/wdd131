@@ -1,4 +1,4 @@
-@media  screen (min-width: 500px) {
+@media  screen and (min-width: 500px) {
     
     
     header {
@@ -6,8 +6,5 @@
        
     }
 
-    main {
-        max-width: 100%;
-        padding: 3rem 0;
-    }
+
 }
