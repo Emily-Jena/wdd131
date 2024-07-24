@@ -1,5 +1,5 @@
 
-@media  screen and (max-width: 600px) {
+@media  screen and (max-width: 500px) {
     .toggle-button {
         display: flex;
     }
@@ -18,7 +18,7 @@
     }
 
     .navbar-links {
-        display: flex;
+        display: none;
         width: 100%;
     }
 
