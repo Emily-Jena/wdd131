@@ -68,4 +68,40 @@ h3 {
     padding-bottom: 2.5rem;
 }
 
-/*Images and icons*/
+/* hamburger - navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.nav-links {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #fff;
+}
+
+.nav-links a {
+	
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.nav-links a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
