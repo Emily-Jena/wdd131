@@ -1,4 +1,4 @@
-
+/*Small Screen*/
 @media  screen and (max-width: 600px) {
     .toggle-button {
         display: flex;
@@ -39,6 +39,6 @@
     .navbar-links.active {
         display: flex;
     }
-    
-}
 
+    
+/*main - information bars*/
