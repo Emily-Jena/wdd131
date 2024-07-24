@@ -109,3 +109,13 @@ h3 {
     display: flex;
 } 
 
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: .85rem;
+    right: 1rem;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
