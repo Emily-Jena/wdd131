@@ -1,121 +1,43 @@
-/* Presets Styles*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
+@media  screen and (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+    
+    .brand-title {
+        margin-left: 0;
+    }
 
-:root {
-    --primary-color: #f5dbf0;
-    /*background*/
-    --secondary-color: #ffffff;
-    /*header text*/
-    --accent-color: #210481;
-    /*header*/
-    --font-family-heading: "Lora", serif;
-    --font-family-body: "Noto Sans Display", sans-serif;
-}
+    .navbar {
+        /*justify-content: space-between;
+        margin-right: 1rem;
+        display: none; */
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
 
-/* Header, Main, Footer Contents Styles*/
-* {
-    box-sizing: border-box;
+    .navbar-links {
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
     
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
-}
-
-#content-wrap {
-    padding-bottom: 2.5rem;
-}
-
-header,
-footer {
-    font-family: var(--font-family-heading);
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
-    text-align: center;
-}
-
-footer {
-    font-size: large;
-    width: 100%;
-    height: auto;
-    position: absolute;
-}
-
-body {
-    font-family: var(--font-family-body);
-    font-weight: 400;
-    min-height: 100vh;
-}
-
-main {
-    background-color: var(--primary-color);
-    margin: 0 auto;
-    padding: 2rem;
-    max-width: 100%;
-}
-
-h1,
-h2 {
-    padding-top: 1.5rem;
-    font-weight: 700;
-    margin-bottom: .5rem;
-}
-
-h3 {
-    padding: .5rem;
-}
-
-/*navigation*/
-/* non-responsive*/
-.navbar {
-    display: flex;
-    align-items: center;
-    color: var(--secondary-color);
-    margin: 1rem;
-    justify-content: space-between;
-}
-
-.brand-title {
-    font-size: 2rem;
-    margin-left: 25%;
-}
-
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    color: var(--secondary-color);
-    display: flex;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
-.navbar-links li a {
-    display: block;
-    text-decoration: none;
-    color: var(--secondary-color);
-    padding: 1rem;
-}
-
-.navbar-links li:hover {
-    background-color: #555;
-}
-
-.navbar-links {
-    display: flex;
-} 
-
-.toggle-button {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: .85rem;
-    right: 1rem;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
