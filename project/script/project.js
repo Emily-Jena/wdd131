@@ -16,3 +16,18 @@ const navigation = document.querySelector('.navbar-links');
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('active');
 });
+
+// ----------------------------------------------------------
+// View Button - hide & open
+
+$(document).ready(function(){
+    $(".invisible-content").hide();
+    // Once clicked add view less make it visible
+    $(document).on('click',"#view-button",function(){
+        var moreLessButton = $(".invisible-content").is(":visible")?'View More':'View Less';
+        // toggle the hidden content and allow the text to increase and decrease 
+        $(this).text(moreLessButton);
+        $(this).parent(".box").find(".invisible-content").toggle();
+        $(this).parent(".box").find(".visible-content").toggle();
+    });
+});

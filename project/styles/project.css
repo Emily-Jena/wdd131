@@ -143,11 +143,25 @@ h2, h3 {
 }
 
 .box p {
-    font-size: large;
-    line-height: 28px;
+    font-size: 18px;
+    height: 40%;
+    overflow: hidden;
+    padding: 10px;
 }
 
+#view-button {
+    background-color: teal;
+    color: var(--secondary-color);
+    padding: 15px 20px;
+    margin: 15px;
+    border-radius: 5px;
+    float: right;
+}
 
+#view-button:hover {
+    background-color: black; 
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
+}
 
 section {
     display: grid;
