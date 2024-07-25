@@ -168,3 +168,24 @@ h2, h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+fieldset {
+    margin: .75rem 0;
+}
+
+label {
+    display: block;
+    padding: .5rem;
+    font-size: larger;
+}
+
+
+input[type="submit"] {
+    font-weight: bolder;
+    background-color: teal;
+    color: var(--secondary-color);
+    box-shadow: 2px 2px grey;
+}
+
+
+
