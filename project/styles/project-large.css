@@ -42,3 +42,9 @@
 
     
 /*main - information bars*/
+
+section {
+    display: flex;
+}
+
+}
