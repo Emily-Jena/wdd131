@@ -39,4 +39,11 @@
     .img-container {
         grid-template-columns: 1fr;
     }
+
+    
+input[id="search"] {
+    font-size: 1.5rem;
+    padding: .2rem;
+}
+
 }
