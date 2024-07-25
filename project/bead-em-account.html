@@ -50,71 +50,33 @@
             </header>
 
             <main>
-                
+
                 <h1>Register Account</h1>
 
                 <fieldset>
                     <legend>Your Personal Details</legend>
-                    <label for="first-name">First Name: <input type="text" id="first-name" name="first-name"
-                            placeholder="Enter first name..." required></label>
+                    <label for="firstName">First Name: <input type="text" id="firstName" name="firstName" required></label>
 
-                    <label for="last-name">Last Name: <input type="text" id="last-name" name="last-name"
-                            placeholder="Enter last name..." required></label>
+                    <label for="lastName">Last Name: <input type="text" id="lastName" name="lastName" required></label>
 
-                    <label for="gender">Gender: <input type="radio" name="gender" required/> Male
-                    <input type="radio" name="gender" required/> Female</label>
+                    <label for="gender">Gender: <input type="radio" name="gender" class="gender" required/> Male <input type="radio" name="gender" /> Female</label>
 
-                    <label for="DOB">Date of Birth <input type="date" required> </label>
+                    <label for="DOB">Date of Birth <input type="date" class="dateOfBirth" required> </label>
 
-                    <label for="email">Email Address: <input type="email" id="email" name="email"
-                            placeholder="Enter email address..." required></label>
+                    <label for="email">Email Address: <input type="email" id="email" name="email" required></label>
 
-                    <label for="phone">Phone Number: <input type="tel" id="phone" name="phone"
-                            placeholder="Enter phone number..." required></label>
-                </fieldset>
-
-               
-
-                <fieldset>
-                    <legend>Your Address</legend>
-                    <label for="address-1">Address 1: <input type="text" id="address-1" name="address-1"
-                            placeholder="123 Raling street" ></label>
-
-                    <label for="address-2">Address 2: <input type="text" id="address-2" name="address-2"
-                            placeholder=""></label>
-
-                    <label for="city">City: <input type="text" id="city" name="city" ></label>
-
-                    <label for="post-code">Post Code: <input type="text" id="post-code" name="post-code"
-                            required></label>
-
-                    <label for="province">Province: <select id="province" name="province">
-                            <option disabled selected> -- Select your Province -- </option>
-                        </select></label>
-
+                    <label for="phone">Phone Number: <input type="tel" id="phone" name="phone" required></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Your Password</legend>
-                    <label for="password">Password: <input type="password" id="password" name="password"
-                            placeholder="Enter Password Here..." required></label>
+                    <label for="password">Password: <input type="password" id="password" name="password" required></label>
 
-                    <label for="confirm-password">Confirm Password: <input type="password" id="confirm-password"
-                            name="password" placeholder="Repeat Password..." required></label>
+                    <label for="confirm-password">Confirm Password: <input type="password" id="confirm-password" name="confirm-password" required></label>
 
                 </fieldset>
 
-                <fieldset>
-                    <legend>Newsletter</legend>
-                    <label for="yes-subscribe">Yes<input type="radio" id="yes-subscribe" name="newsletter" value="yes"
-                            required></label>
-
-                    <label for="no-subscribe">No<input type="radio" id="no-subscribe" name="newsletter" value="no"
-                            required></label>
-
-                </fieldset>
-
-                <input type="submit" value="Save my Details">
+                <input type="submit" value="Save my Details" onclick="saveDetails()">
 
             </main>
 

@@ -81,3 +81,25 @@ states.forEach(state => {
     stateSelect.add(option);
 });
 //-----------------------------------------------------------------------------
+//local Storage with bead-em-account
+
+function saveDetails() {
+
+    //Retrieving data
+    var fname = document.getElementById("firstName").value;
+    var lname = document.getElementById("lastName").value;
+    var email = document.getElementById("email").value;
+    var phoneNo = document.getElementById("phone").value;
+    var pass = document.getElementById("password").value;
+
+    // check retrieving data 
+    // alert(fname + lname + email + phoneNo + pass );
+
+    //storing data
+    var firstN = localStorage.setItem("fname", fname);
+    var lastN = localStorage.setItem("lname", lname);
+    var emAddress = localStorage.setItem("email", email);
+    var telPhone = localStorage.setItem("phoneNo", phoneNo);
+    var pWord = localStorage.setItem("pass", pass);
+
+}
