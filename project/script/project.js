@@ -20,14 +20,64 @@ hamButton.addEventListener('click', () => {
 // ----------------------------------------------------------
 // View Button - hide & open
 
-$(document).ready(function(){
+$(document).ready(function () {
     $(".invisible-content").hide();
     // Once clicked add view less make it visible
-    $(document).on('click',"#view-button",function(){
-        var moreLessButton = $(".invisible-content").is(":visible")?'View More':'View Less';
+    $(document).on('click', "#view-button", function () {
+        var moreLessButton = $(".invisible-content").is(":visible") ? 'View More' : 'View Less';
         // toggle the hidden content and allow the text to increase and decrease 
         $(this).text(moreLessButton);
         $(this).parent(".box").find(".invisible-content").toggle();
         $(this).parent(".box").find(".visible-content").toggle();
     });
 });
+
+// ----------------------------------------------------------------------
+const states = [
+    {
+        id: "EC",
+        name: "Eastern Cape"
+    },
+    {
+        id: "FS",
+        name: "Free State"
+    },
+    {
+        id: "GP",
+        name: "Gauteng"
+    },
+    {
+        id: "KZN",
+        name: "Kwa-Zulu Natal"
+    },
+    {
+        id: "LP",
+        name: "Limpopo"
+    },
+    {
+        id: "MP",
+        name: "Mpumalanga"
+    },
+    {
+        id: "NW",
+        name: "North West"
+    },
+    {
+        id: "NC",
+        name: "Northern Cape"
+    },
+    {
+        id: "WC",
+        name: "Western Cape"
+    }
+];
+
+const stateSelect = document.getElementById('province');
+
+states.forEach(state => {
+    const option = document.createElement('option');
+    option.value = state.id;
+    option.text = state.name;
+    stateSelect.add(option);
+});
+//-----------------------------------------------------------------------------

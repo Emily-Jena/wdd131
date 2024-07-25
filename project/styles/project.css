@@ -149,8 +149,8 @@ h2, h3 {
     overflow: hidden;
     padding: 10px;
 }
-
-#view-button {
+/* Buttons options*/
+#view-button, input[type="submit"] {
     background-color: teal;
     color: var(--secondary-color);
     padding: 15px 20px;
@@ -159,7 +159,7 @@ h2, h3 {
     float: right;
 }
 
-#view-button:hover {
+#view-button:hover, input[type="submit"]:hover {
     background-color: black; 
     box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
 }
@@ -169,6 +169,7 @@ h2, h3 {
     grid-template-columns: 1fr 1fr;
 }
 
+/*form information*/
 fieldset {
     margin: .75rem 0;
 }
@@ -179,13 +180,12 @@ label {
     font-size: larger;
 }
 
-
-input[type="submit"] {
-    font-weight: bolder;
-    background-color: teal;
-    color: var(--secondary-color);
-    box-shadow: 2px 2px grey;
+::placeholder {
+    color: rgba(191, 178, 178, 0.445);
 }
+
+
+
 
 
 
