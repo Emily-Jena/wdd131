@@ -112,9 +112,5 @@ function saveDetails() {
     if (fname == firstN && lname == lastN && email == emAddress && phoneNo == telPhone && pass == pWord) 
     {
         alert("Details Saved Successfully!");
-    } else {
-        alert("Please try Again!");
-    }
-
-
+    } 
 }
