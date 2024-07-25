@@ -102,4 +102,19 @@ function saveDetails() {
     var telPhone = localStorage.setItem("phoneNo", phoneNo);
     var pWord = localStorage.setItem("pass", pass);
 
+    //Retrieving stored data & Use Calculation
+    var firstN = localStorage.getItem("fname", fname);
+    var lastN = localStorage.getItem("lname", lname);
+    var emAddress = localStorage.getItem("email", email);
+    var telPhone = localStorage.getItem("phoneNo", phoneNo);
+    var pWord = localStorage.getItem("pass", pass);
+
+    if (fname == firstN && lname == lastN && email == emAddress && phoneNo == telPhone && pass == pWord) 
+    {
+        alert("Details Saved Successfully!");
+    } else {
+        alert("Please try Again!");
+    }
+
+
 }
