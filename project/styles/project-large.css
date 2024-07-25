@@ -43,8 +43,8 @@
     
 /*main - information bars*/
 
-section {
-    display: block;
+.img-container {
+    grid-template-columns: 1fr;
 }
 
 

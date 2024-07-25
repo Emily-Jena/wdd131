@@ -163,7 +163,7 @@ h2, h3 {
     box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
 }
 
-section {
+.img-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
