@@ -109,8 +109,11 @@ function saveDetails() {
     var telPhone = localStorage.getItem("phoneNo", phoneNo);
     var pWord = localStorage.getItem("pass", pass);
 
-    if (fname == firstN && lname == lastN && email == emAddress && phoneNo == telPhone && pass == pWord) 
-    {
-        alert("Details Saved Successfully!");
-    } 
+    let thanksMessage = `Thank you ${fname} ${lname}.`
+
+    if (fname == firstN && lname == lastN && email == emAddress && phoneNo == telPhone && pass == pWord) {
+        alert(thanksMessage, "Your Details Saved Successfully!");
+    }
+
+
 }
